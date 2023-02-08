@@ -1,4 +1,4 @@
-var app = angular.module('mainApp');
+var app = angular.module('mainApp', []);
 
 app.controller('mainCtrl', function ($scope) {
     loadLib();
@@ -7,7 +7,7 @@ app.controller('mainCtrl', function ($scope) {
         //Dirs containing html, controller, and css
         let standardDirs = [
             'header',
-            'footer'
+            //'footer'
         ];
 
         standardDirs.forEach(function (dir) {
