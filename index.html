@@ -1,15 +1,24 @@
 <!doctype html>
 
-    <html lang="en">
+    <html lang="en" ng-app="mainApp">
         <head>
             <meta charset="UTF-8">
             <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular-route.js"></script>
+            
             <script src="app.js"></script>
+            <link rel="stylesheet" href="style.css"></link>
+            <script src="./lib/header/header.directive.js"></script>
+            <link rel="stylesheet" href="./lib/header/header.css">
+            <script src="./lib/footer/footer.directive.js"></script>
+            <link rel="stylesheet" href="./lib/footer/footer.css">
+            
         </head>
 
-        <body ng-app="mainApp" ng-controller="mainCtrl as c">
-            Hello, World!
+        <custom-header></custom-header>
+
+        <body ng-controller="mainCtrl">
+            {{greeting}}
         </body>
 
     </html>
