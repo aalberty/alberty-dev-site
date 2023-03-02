@@ -2,3 +2,15 @@ main {
     height: 100vh;
     width: 100vw;
 }
+
+body {
+    display: flex;
+    flex-flow: column;
+}
+
+div.greeting-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
